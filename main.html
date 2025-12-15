@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCPGRFA 2026 - Tamil Nadu Rice Research Institute</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="top-bar py-1 d-none d-md-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <small class="text-white">Welcome to NCPGRFA 2026</small>
+            <div class="contact-social text-white d-flex align-items-center">
+                <a href="tel:+917010523496" class="text-white me-3" title="Call Us">
+                    <i class="fas fa-phone-alt"></i> 
+                    <span class="d-none d-lg-inline"></span>
+                </a>
+    
+                <a href="mailto:info@yourconference.com" class="text-white me-3" title="Email Us">
+                    <i class="fas fa-envelope"></i>
+                </a>
+    
+                <a href="https://tnau.ac.in/site/rrs-aduthurai/" target="_blank" class="text-white me-3" title="TRRI Website">
+                    <i class="fas fa-globe"></i>
+                </a>
+    
+                <a 
+                    href="https://www.google.com/maps/dir//Aduthurai,+Mahadanapuram,+Tamil+Nadu+612101/@11.4025612,79.7030878,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a552e0d0b092e19:0x8ca84f88034c6b19!2m2!1d79.4800762!2d10.9984632?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" 
+                    target="_blank" 
+                    class="text-white"
+                    title="View Venue on Map"
+                >
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm" id="home">
+        <div class="container py-2">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo1.jpg" alt="Logo" height="70" class="me-2"> 
+                <div class="d-flex flex-column">
+                    <span class="fs-4 fw-bold" style="color: rgb(121, 3, 3);">TAMIL NADU RICE RESEARCH INSTITUTE</span>
+                    <span class="fs-6 fw-bold" style="color: red;">Aduthurai - 612 101, Thanjavur, Tamil Nadu</span>
+                </div>
+                <img src="ppf.png" alt="Logo" height="70" class="ms-2">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#register">Register</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#organizers">Organizers</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section py-5 position-relative">
+        <div class="hero-overlay"></div>
+        <div class="container z-1 position-relative text-dark py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center">
+                    <p style="font-weight: bolder; font-size:25px; color: blue;">National Conference on</p>
+                    <h1 class="display-4 fw-bold text-success mb-3" style="color: #74c574;text-shadow: 2px;">Plant Genetic Resources for Food and Agriculture</h1>
+                    <h2 style="color: red; font-weight: bolder;">NCPGRFA 2026</h2>
+                    
+                    <p class="fs-5 mb-4 fw-bold">
+                        February 5-6, 2026 | TRRI, Aduthurai, Tamil Nadu, India
+                    </p>
+                    <p class="organizers mb-4">
+                        [Sponsored by : PPVFRA, GoI, New Delhi]
+                    </p>
+                    <div class="cta-buttons mb-5">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSea4IZA7sYWPHay_vY2NrdZLR7wftQqLHV4d3p8KTyFKFfBew/viewform" class="btn btn-lg btn-warning py-2 px-4 shadow-lg">
+                            <i class="fas fa-ticket-alt me-2"></i>Register
+                        </a>
+                        <a href="Broucher-1(4).pdf" download="Brochure.pdf" class="btn btn-lg btn-warning py-2 px-4 shadow-lg ms-3">
+                            <i class="fas fa-download me-2"></i>Brochure
+                        </a>
+                    </div>
+                    
+                    <div class="countdown d-flex justify-content-center text-center mt-4" id="countdown-timer" style="color: rgb(166, 8, 206)">
+                        <div class="time-box me-4">
+                            <h2 class="display-4 fw-bold" id="days" style="color: blue">00</h2>
+                            <p class="text-uppercase fw-bold" style="color: blue">Days</p>
+                        </div>
+                        <div class="time-box me-4">
+                            <h2 class="display-4 fw-bold" id="hours" style="color:blue">00</h2>
+                            <p class="text-uppercase fw-bold" style="color: blue">Hours</p>
+                        </div>
+                        <div class="time-box me-4">
+                            <h2 class="display-4 fw-bold" id="minutes" style="color: blue">00</h2>
+                            <p class="text-uppercase fw-bold" style="color: blue">Mins</p>
+                        </div>
+                        <div class="time-box">
+                            <h2 class="display-4 fw-bold" id="seconds" style="color: blue">00</h2>
+                            <p class="text-uppercase fw-bold" style="color: blue">Secs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="about" class="py-5 bg-light-green section-padding">
+    <div class="container">
+
+        <!-- Section Title -->
+        <h2 class="text-center display-6 fw-bold mb-5 section-title">🌾 About</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <!-- About the University -->
+                <div class="about-card p-4 rounded shadow-sm bg-white mb-4">
+                    <h3 class="h4 text-success mb-3">🌾 About the University</h3>
+                    <p>
+                        The Tamil Nadu Agricultural University (TNAU) came into existence in 1871. It is one of the best
+                        State Agricultural Universities (SAU) in India, ranked 6th in Agriculture and Allied Sector
+                        Category by NIRF (2025). Internationally, TNAU ranked 105 in QS-BRICS and is the first SAU
+                        accredited by the Indian Council of Agricultural Research (ICAR). The University has received
+                        prestigious recognition as the best institution and best performing university by ICAR.
+                    </p>
+                    <p>
+                        Currently, TNAU offers 13 Undergraduate degree programmes, Master’s and Doctoral programmes in
+                        12 disciplines, and Diploma (Agri.) programmes in 11 centres. Diploma in Agri-inputs and
+                        Certificate programmes are also offered through ODL mode. The University has released more than
+                        900 varieties and hybrids of cereals, millets, pulses, horticultural, commercial, fodder and
+                        forage crops till 2025.
+                    </p>
+                </div>
+
+                <!-- About the Institute -->
+                <div class="about-card p-4 rounded shadow-sm bg-white mb-4">
+                    <h3 class="h4 text-success mb-3">🔬 About the Institute</h3>
+                    <p>
+                        Tamil Nadu Rice Research Institute (TRRI), under TNAU, is located at Aduthurai, Thanjavur district,
+                        Tamil Nadu. It has been serving Indian agricultural development for nearly 103 years and is
+                        actively engaged in rice and rice-based research and extension.
+                    </p>
+                    <p>
+                        TRRI functions as the Lead Centre for Rice Research and coordinates Region II of TNAU. The
+                        research stations under this region include RRS Virudhachalam, ORS Tindivanam, SRS Cuddalore,
+                        SRS Sirugamani, SRS Melathur, RRS Tirur, ARS Virinjipuram, CEM Athiyandal, NPRC CRS Veppanthattai,
+                        ARS Thanjavur and ARS Pattukottai.
+                    </p>
+                    <p>
+                        So far, TRRI has released 60 rice varieties, 1 rice hybrid, 7 black gram varieties, 3 green gram
+                        varieties, and one variety each of sunnhemp, cotton and soybean, besides introducing 14 rice
+                        varieties.
+                    </p>
+                </div>
+
+                <!-- About the National Conference -->
+                <div class="about-card p-4 rounded shadow-sm bg-white mb-4">
+                    <h3 class="h4 text-success mb-3">🌍 About the National Conference</h3>
+                    <p>
+                        Plant genetic resources for food and agriculture form the biological basis of global food
+                        security and directly or indirectly support the livelihoods of every person on earth. These
+                        include traditional varieties, modern cultivars and other plant species used for food, feed,
+                        fibre, clothing, shelter, timber and energy.
+                    </p>
+                    <p>
+                        These resources are the raw materials for developing new cultivars through conventional
+                        breeding or biotechnology. The history of plant genetic resources dates back more than 10,000
+                        years when farmers selected useful traits from wild species. Conservation of endangered plants
+                        is vital to avoid loss of valuable genetic traits. Seeds are the most convenient materials for
+                        conservation due to ease of storage, transport and multiplication.
+                    </p>
+                    <div class="about-card p-4 rounded shadow-sm bg-white mb-4">
+                    <h3 class="h4 text-success mb-3">🌱 Key Themes </h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <ul class="fs-6">
+                                <li>New Frontiers for Crop Improvement – Advances and Achievements</li>
+                                <li>Seed Enhancement, Crop Diversification, Integrated & Organic Farming for Secure Food System</li>
+                                <li>Plant Protection and Microbial Genetic Resources for Doubling Farmers’ Income</li>
+                                <li>Innovations, Entrepreneurship and Livelihood Opportunities in PGRs and Farmers’ Varieties</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+                <div class="about-card p-4 rounded shadow-sm bg-white mb-4">
+                    <h3 class="h4 text-success mb-3">⚖️ Protection of Plant Varieties and Farmers’ Rights Act, 2001</h3>
+                    <p>
+                        The Protection of Plant Varieties and Farmers’ Rights (PPV&FR) Act was enacted by the Government
+                        of India on October 30, 2001 to protect traditional crop varieties and safeguard the interests
+                        of farmers and plant breeders involved in the development of new varieties.
+                    </p>
+                    <p>
+                        The Protection of Plant Varieties and Farmers’ Rights Authority was established to implement the
+                        Act. The main features include protection of crop varieties, establishment of farmers’ rights,
+                        preservation of traditional varieties, and prevention of extinction of indigenous genetic
+                        resources.
+                    </p>
+                    <p>
+                        The Act recognizes the multiple roles played by farmers in cultivating, conserving, developing
+                        and selecting plant varieties. It acknowledges the value added by farmers to wild species and
+                        traditional landraces through selection and identification of economically important traits.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="gallery" class="py-5 bg-white section-padding">
+    <div class="container">
+        <h2 class="text-center display-6 fw-bold mb-5 section-title">Gallery</h2>
+        
+        <div class="gallery-carousel">
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-item">
+                        <img src="bg-slide-a.jpeg" alt="Gallery Image 1" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-b.jpeg" alt="Gallery Image 2" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-c.jpeg" alt="Gallery Image 3" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-d.jpeg" alt="Gallery Image 4" class="gallery-image">
+                    </div>
+                     <div class="carousel-item">
+                        <img src="bg-slide-e.jpeg" alt="Gallery Image 1" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-f.jpeg" alt="Gallery Image 2" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-g.jpeg" alt="Gallery Image 3" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-h.jpeg" alt="Gallery Image 4" class="gallery-image">
+                    </div>
+                     <div class="carousel-item">
+                        <img src="bg-slide-i.jpeg" alt="Gallery Image 1" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-j.jpeg" alt="Gallery Image 2" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-k.jpeg" alt="Gallery Image 3" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-l.jpeg" alt="Gallery Image 4" class="gallery-image">
+                    </div>
+                     <div class="carousel-item">
+                        <img src="bg-slide-m.jpeg" alt="Gallery Image 1" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-n.jpeg" alt="Gallery Image 2" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-o.jpeg" alt="Gallery Image 3" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-p.jpeg" alt="Gallery Image 4" class="gallery-image">
+                    </div>
+                     <div class="carousel-item">
+                        <img src="bg-slide-q.jpeg" alt="Gallery Image 1" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-r.jpeg" alt="Gallery Image 2" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-s.jpeg" alt="Gallery Image 3" class="gallery-image">
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <img src="bg-slide-t.jpeg" alt="Gallery Image 4" class="gallery-image">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </section>
+
+
+    <section id="conference-details" class="py-5 bg-light-green">
+    <div class="container">
+        <h2 class="text-center display-6 fw-bold mb-5 section-title">Conference Logistics & Registration</h2>
+
+        <div class="accordion" id="conferenceAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-file-alt me-2"></i> Call for Papers: 
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#conferenceAccordion">
+                    <div class="accordion-body">
+                        <p class="fw-bold">Guidelines for Paper Presentation:</p>
+                        <ol class="list-group list-group-flush">
+                            <li class="list-group-item">Research papers, Policy papers, Case studies and Success stories are invited for oral / poster presentations in the mentioned themes.</li>
+                            <li class="list-group-item">The abstract / paper should be in editable MS word format, Times New Roman, font size 12, and line spacing 1.5.</li>
+                            <li class="list-group-item">The abstract should not exceed one page and the full paper should not exceed 12 pages.</li>
+                            <li class="list-group-item">Abstracts and full paper may be submitted while registering in the Google form or through mailed to ncpgfrfa2026@gmail.com.</li>
+                            <li class="list-group-item">Registration and payment are mandatory for the participation/presentation of papers.</li>
+                            <li class="list-group-item">The abstracts and full papers presented in the conference will be released as a book with ISBN.</li>
+                            <li class="list-group-item">The selected full-length manuscript with proper plagiarism check will be published in a NAAS (4 to 6) rated journal free of cost (Plagiarism checking charges Rs.250/- applicable).</li>
+                            <li class="list-group-item">The ISBN book and Journal will be released during the inaugural ceremony.</li>
+                            <li class="list-group-item">Acceptance letter will be communicated through ncpgfrfa2026@gmail.com only.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="far fa-calendar-alt me-2"></i> Important Dates & Accommodation
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#conferenceAccordion">
+                    <div class="accordion-body">
+                        <h4 class="h6 text-primary mb-3">Dates to Remember</h4>
+                        <ul class="list-unstyled fw-bold ms-3">
+                            <li><i class="fas fa-arrow-right text-success me-2"></i> Last date for registration and abstract submission: <span class="float-end">20.12.2025</span></li>
+                            <li><i class="fas fa-arrow-right text-success me-2"></i> Communication of abstract Acceptance: <span class="float-end">26.12.2025</span></li>
+                            <li><i class="fas fa-arrow-right text-success me-2"></i> Last date for full Length Paper Submission: <span class="float-end">05.01.2026</span></li>
+                        </ul>
+
+                        <hr class="my-4">
+
+                        <h4 class="h6 text-primary mb-3">Accommodation</h4>
+                        <p class="ms-3">
+                            Accommodation will be arranged in local hotels at a nominal cost on a demand basis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="fas fa-trophy me-2"></i> Awards and Recognition
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#conferenceAccordion">
+                    <div class="accordion-body">
+                        <p class="fw-bold">Following awards and certificates of appreciation will be given to impressive presentations in each thematic area:</p>
+                        <ul class="list-unstyled ms-3">
+                            <li><i class="fas fa-star text-warning me-2"></i> Best Oral / Poster presentation award for Faculties and Students.</li>
+                            <li><i class="fas fa-star text-warning me-2"></i> Best Young Scientist Award for Men and Women category (Age Below 40 years).</li>
+                            <li><i class="fas fa-star text-warning me-2"></i> Best Scientist Award for Men and Women category (Age Below 60 Years).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <i class="fas fa-receipt me-2"></i> Eligibility and Registration Fees 
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#conferenceAccordion">
+                    <div class="accordion-body"></div>
+                    <p style="text-justify: initial;">   Faculties,Research Institutes / Stations,ICAR and KVK Scientists,Students,Research Scholars of SAUs (State Agricultural Universities) & UGC supported Colleges,Industry personnel,Farmers</p>
+                        <table class="table table-bordered table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Fee Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Students</td>
+                                    <td>₹500</td>
+                                </tr>
+                                <tr>
+                                    <td>Faculty / Academicians</td>
+                                    <td>₹1500</td>
+                                </tr>
+                                <tr>
+                                    <td>Industrialist / Corporate Delegates</td>
+                                    <td>₹2500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                     
+                </div>
+            </div>
+            <div class="cta-buttons mb-5 text-center">
+                <br>
+                        <h3 class="mb-4">Register Now and Secure Your Spot!</h3>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSea4IZA7sYWPHay_vY2NrdZLR7wftQqLHV4d3p8KTyFKFfBew/viewform" class="btn btn-lg btn-warning py-3 px-5 shadow-lg">
+                            <i class="fas fa-ticket-alt me-2"></i>Register Now
+                        </a>
+                    </div>
+        </div>
+
+    </div>
+</section>
+<section id="organizers" class="py-4 bg-light section-padding">
+    <div class="container">
+        <h2 class="text-center display-6 fw-bold mb-4 section-title">
+            Organizing Committee & Sponsors
+        </h2>
+
+        <div class="organizer-card p-4 bg-white rounded shadow-sm">
+    <div class="row g-4">
+        <div class="row">
+    <div class="col-md-12">
+        <h3 class="text-center h5 mb-3 text-success">
+            Organizing Committee
+        </h3>
+
+        <div class="organizer-card p-4 bg-white rounded shadow-sm">
+
+    <!-- CHIEF PATRON -->
+    <h6 class="text-success fw-bold">Chief Patron</h6>
+    <div class="section-line"></div>
+
+    <div class="d-flex align-items-center mb-4 person-card">
+        <img src="img8.jpg" alt="Chief Patron">
+        <div class="ms-3">
+            <strong>Dr. R. Thamizh Vendan</strong><br>
+            <small class="text-muted">Acting Vice-Chancellor & Registrar, TNAU</small>
+        </div>
+    </div>
+    <hr class="big-divider">
+
+    <!-- PATRONS -->
+<h6 class="text-success fw-bold text-center">Patrons</h6>
+<div class="section-line mx-auto"></div>
+
+<div class="row justify-content-center align-items-center text-center mb-4 g-2">
+
+    <div class="col-md-5 d-flex justify-content-center">
+        <div class="person-card text-center">
+            <img src="patron1.png" class="rect-photo mb-2">
+            <div>
+                <strong>Dr. K. Subrahmaniyan</strong><br>
+                <small class="text-muted">Convenor & Director, TRRI</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-5 d-flex justify-content-center">
+        <div class="person-card text-center">
+            <img src="patron2.png" class="rect-photo mb-2">
+            <div>
+                <strong>Dr. R. Umarani</strong><br>
+                <small class="text-muted">Director, Seed Centre, TNAU</small>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<hr class="big-divider">
+
+
+    <!-- ROW 1 : CO-CONVENOR & ORGANIZING SECRETARY -->
+<div class="row mb-4 text-center">
+
+    <!-- CO-CONVENOR -->
+    <div class="col-md-6">
+        <h6 class="text-success fw-bold">Co-Convenor</h6>
+        <div class="section-line mx-auto"></div>
+
+        <div class="person-card d-flex flex-column align-items-center">
+            <img src="c.png" class="rect-photo mb-2">
+            <strong>Dr. R. Arunachalam</strong>
+            <small class="text-muted">Professor (Agrl. Extn.)</small>
+        </div>
+    </div>
+
+    <!-- ORGANIZING SECRETARY -->
+    <div class="col-md-6">
+        <h6 class="text-success fw-bold">Organizing Secretary</h6>
+        <div class="section-line mx-auto"></div>
+
+        <div class="person-card d-flex flex-column align-items-center">
+            <img src="c2.png" class="rect-photo mb-2">
+            <strong>Dr. G. Sathiyanarayanan</strong>
+            <small class="text-muted">Assoc. Professor (SS&T)</small>
+        </div>
+    </div>
+
+</div>
+<hr class="big-divider">
+
+<!-- ROW 2 : CO-ORDINATORS & CO-ORGANIZING SECRETARIES -->
+<div class="row text-center">
+
+    <!-- CO-ORDINATORS -->
+    <div class="col-md-6">
+        <h6 class="text-success fw-bold">Co-ordinators</h6>
+        <div class="section-line mx-auto"></div>
+
+        <ul class="list-unstyled compact-list mt-2">
+            <li><strong>Dr. R. Manimaran</strong> – Professor (PBG)</li>
+            <li><strong>Dr. S. Elamathi</strong> – Assoc. Professor (AGR)</li>
+            <li><strong>Dr. K. Rajappan</strong> – Professor (PP)</li>
+        </ul>
+    </div>
+
+    <!-- CO-ORGANIZING SECRETARIES -->
+    <div class="col-md-6">
+        <h6 class="text-success fw-bold">Co-organizing Secretaries</h6>
+        <div class="section-line mx-auto"></div>
+
+        <ul class="list-unstyled compact-list mt-2">
+            <li><strong>Dr. M. Dhandapani</strong> – Assoc. Prof. (PB&G)</li>
+            <li><strong>Dr. R. Pushpa</strong> – Asst. Prof. (PB&G)</li>
+            <li><strong>Dr. R. Arulmozhi</strong> – Asst. Prof. (PB&G)</li>
+        </ul>
+    </div>
+
+</div>
+<hr class="big-divider">
+
+    <!-- ORGANIZING COMMITTEE MEMBERS (LAST) -->
+    <!-- ORGANIZING COMMITTEE MEMBERS -->
+<h6 class="text-success fw-bold text-center mt-5">
+    Organizing Committee Members
+</h6>
+<div class="section-line mx-auto mb-4"></div>
+
+<div class="organizing-members">
+
+    <div class="row text-center small">
+        <!-- COLUMN 1 -->
+        <div class="col-md-6 col-lg-3 member-col">
+            <p><strong>Dr. P. Anandhi</strong><br>
+                <span>Assoc. Professor (Agrl. Ento.)</span>
+            </p>
+            <p><strong>Dr. S. Mathiyazhagan</strong><br>
+                <span>Assoc. Professor (Pl. Patho.)</span>
+            </p>
+            <p><strong>Dr. T. Sivasankari Devi</strong><br>
+                <span>Asst. Professor (Agrl. Micro)</span>
+            </p>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="col-md-6 col-lg-3 member-col">
+            <p><strong>Dr. G. Murugan</strong><br>
+                <span>Asst. Professor (Agron.)</span>
+            </p>
+            <p><strong>Dr. T. Muthukumararaja</strong><br>
+                <span>Asst. Professor (SS&AC)</span>
+            </p>
+            <p><strong>Dr. R. Arul Ananth</strong><br>
+                <span>Asst. Professor (Horti.)</span>
+            </p>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="col-md-6 col-lg-3 member-col">
+            <p><strong>Dr. P. Rajarathinam</strong><br>
+                <span>Assoc. Professor (Agron.)</span>
+            </p>
+            <p><strong>Dr. D. Kanchana</strong><br>
+                <span>Assoc. Professor (Agrl. Micro.)</span>
+            </p>
+            <p><strong>Dr. P. Ahila Devi</strong><br>
+                <span>Asst. Professor (Pl. Patho.)</span>
+            </p>
+        </div>
+
+        <!-- COLUMN 4 -->
+        <div class="col-md-6 col-lg-3 member-col">
+            <p><strong>Dr. P. Ramesh</strong><br>
+                <span>Asst. Professor (Agrl. Extn.)</span>
+            </p>
+            <p><strong>Dr. R. Bhuvaneswari</strong><br>
+                <span>Asst. Professor (SS&AC)</span>
+            </p>
+            <p><strong>Dr. G. Sudhagar Rao</strong><br>
+                <span>Asst. Professor (Agron.)</span>
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+</section>
+
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center h4 mb-4 text-success">Sponsored By</h3>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-6 col-md-3 mb-4 text-center">
+                            <img src="ppf.png" alt="PPVFRA Logo" class="img-fluid sponsor-logo" style="max-height: 120px;">
+                            <p class="mt-2 fw-bold">PPVFRA, GoI</p>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4 text-center">
+                            <img src="logo1.jpg" alt="TNAU Logo" class="img-fluid sponsor-logo" style="max-height: 120px;">
+                            <p class="mt-2 fw-bold">TNAU</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+    <div class="container">
+
+        <h2 class="text-center fw-bold mb-4">Contact & Travel Information</h2>
+
+        <!-- TRAVEL INFO -->
+        <div class="row mb-5">
+            <div class="col-md-7">
+                <h5 class="text-success fw-bold mb-3">Travel</h5>
+
+                <p class="text-muted">
+                    Aduthurai is a sub-urban region located on the
+                    Mayiladuthurai – Kumbakonam Highway
+                    (14 km from Kumbakonam and 25 km from Mayiladuthurai).
+                    It is well connected by road, railway, and airway.
+                </p>
+
+                <ul class="list-unstyled">
+                    <li><strong>Nearest Airport:</strong> Trichirapalli Airport (112 km)</li>
+                    <li><strong>Nearest Railway Junction:</strong> Mayiladuthurai (22 km)</li>
+                    <li><strong>Railway Station:</strong> Kumbakonam (12 km)</li>
+                    <li><strong>Local Railway Station:</strong> Aduthurai</li>
+                </ul>
+            </div>
+
+            <!-- GOOGLE MAP -->
+            <div class="col-md-5">
+                <h5 class="text-success fw-bold mb-3">Location</h5>
+                <div class="ratio ratio-4x3 rounded shadow-sm">
+                    <iframe 
+                        src="https://www.google.com/maps?q=Tamil+Nadu+Rice+Research+Institute,+Aduthurai&output=embed"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <p class="small text-muted mt-2">
+                    View on Google Maps: 
+                    <a href="https://maps.google.com/?q=Tamil+Nadu+Rice+Research+Institute,+Aduthurai"
+                       target="_blank">
+                        Open Map
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <h5 class="text-success fw-bold">Dr. K. Subrahmaniyan</h5>
+                    <p class="mb-1"><strong>Director & Convenor</strong></p>
+                    <p class="mb-1">NCPGRFA 2026 Conference</p>
+                    <p class="mb-1">Tamil Nadu Rice Research Institute</p>
+                    <p class="mb-1">Aduthurai – 612 101</p>
+                    <p class="mb-3">Thanjavur District, Tamil Nadu, India</p>
+
+                    <p class="mb-1">
+                        <strong>Email:</strong>
+                        <a href="mailto:ncpgrfa2026@gmail.com">
+                            ncpgrfa2026@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <h5 class="text-success fw-bold">Dr. G. Sathiyanarayanan</h5>
+                    <p class="mb-1"><strong>Organizing Secretary</strong></p>
+                    <p class="mb-1">NCPGRFA 2026 Conference</p>
+                    <p class="mb-1">TRRI, Aduthurai – 612 101</p>
+                    <p class="mb-3">Thanjavur, Tamil Nadu, India</p>
+
+                    <p class="mb-1">
+                        <strong>Phone:</strong><br>
+                        +91 70105 23496<br>
+                        +91 94432 02866
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2026 NCPGRFA - Tamil Nadu Rice Research Institute. All Rights Reserved.</p>
+            <p class="mb-0">
+                <i class="fas fa-phone-alt me-2"></i> +91 7010523496 | 
+                <i class="fas fa-envelope ms-3 me-2"></i> info@trri.tnau.ac.in
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
