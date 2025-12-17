@@ -30,7 +30,7 @@ body {
 }
 
 .topic-heading {
-    color: #1b5e20;
+    color: red;
     font-weight: normal;
     margin-bottom: 4px;
 }
@@ -314,4 +314,5 @@ body {
         font-size: 0.8rem;
     }
 }
+
 
