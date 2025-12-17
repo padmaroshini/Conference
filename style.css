@@ -81,9 +81,12 @@ body {
 .hero-section::before {
     content: '';
     position: absolute;
-    inset: -20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('bg1.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(7px);
@@ -311,3 +314,4 @@ body {
         font-size: 0.8rem;
     }
 }
+
