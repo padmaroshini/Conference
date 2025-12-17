@@ -1,336 +1,272 @@
-/* Custom Colors */
+/* ================================
+   CUSTOM COLORS
+================================ */
 :root {
-    --primary-green: #38761d; /* Deep Green for success/highlights */
-    --secondary-orange: #f6b26b; /* Lighter Orange for warnings/registration */
-    --top-bar-bg: #0d9633; /* Darker Green for the top bar */
-    --primary-dark: #19482f; /* Dark background for Register CTA */
+    --primary-green: #38761d;
+    --secondary-orange: #f6b26b;
+    --top-bar-bg: #0d9633;
+    --primary-dark: #19482f;
     --text-dark: #333333;
-    --light-green: #f3f9f3; /* Subtle green background for About/Sponsor */
+    --light-green: #f3f9f3;
 }
 
-/* Base Styles */
+/* ================================
+   BASE STYLES
+================================ */
 body {
     font-family: Arial, sans-serif;
     color: var(--text-dark);
 }
+
 .section-padding {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
 .section-title {
     color: var(--primary-dark);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 .topic-heading {
-    color: #1b5e20 ;
+    color: #1b5e20;
     font-weight: normal;
     margin-bottom: 4px;
 }
+
 .tabbed {
-    margin-left: 40px;   
+    margin-left: 40px;
 }
 
-
-/* Top Bar and Navbar (Unchanged from previous response) */
+/* ================================
+   TOP BAR
+================================ */
 .top-bar {
     background-color: var(--top-bar-bg);
     color: white;
     font-size: 0.8rem;
 }
 
-/* Override Bootstrap colors for buttons/links */
+/* ================================
+   BUTTON OVERRIDES
+================================ */
 .btn-success {
     background-color: var(--primary-green);
     border-color: var(--primary-green);
 }
+
 .btn-success:hover {
     background-color: #2b5c14;
     border-color: #2b5c14;
 }
+
 .btn-warning {
-    background-color: var(--secondary-orange); 
+    background-color: var(--secondary-orange);
     border-color: var(--secondary-orange);
     color: var(--text-dark);
 }
 
-/* Hero Section Styling (Unchanged from previous response) */
+/* ================================
+   HERO SECTION
+================================ */
 .hero-section {
     position: relative;
     min-height: 100vh;
     overflow: hidden;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    color: var(--text-dark); 
 }
 
 .hero-section::before {
     content: '';
     position: absolute;
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
+    inset: -20px;
     background-image: url('bg1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     filter: blur(7px);
-    
     z-index: -1;
 }
+
 .hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.1); 
-    z-index: 0;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.1);
 }
+
 .hero-section h1 {
     color: var(--primary-green) !important;
 }
+
 .organizers {
     font-size: 1.1rem;
     color: #444;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.6); 
+    background-color: rgba(255, 255, 255, 0.6);
     display: inline-block;
 }
+
+/* ================================
+   HERO IMAGE
+================================ */
 .circular-image-container {
-    width: 300px; 
+    width: 300px;
     height: 300px;
-    margin: 0 auto;
+    margin: auto;
     overflow: hidden;
     border-radius: 50%;
     border: 10px solid white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
+
 .circular-image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Countdown Timer Styling */
+/* ================================
+   COUNTDOWN
+================================ */
 .countdown h2 {
-    font-size: 3rem; 
+    font-size: 3rem;
     color: var(--primary-green);
     margin-bottom: 0;
 }
+
 .countdown p {
     font-size: 1rem;
     color: #666;
     margin-top: -5px;
 }
 
-
-/* 1. ABOUT Section Specific Styles */
+/* ================================
+   ABOUT SECTION
+================================ */
 .bg-light-green {
     background-color: var(--light-green);
-    color: black;
-}
-.bg-light-green .accordion-body {
-    background-color: white;
-    color: black;
-}
-.about-card {
-    border-radius: 10px !important;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s;
-}
-.about-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
-/* 2. REGISTER Section Specific Styles */
+.bg-light-green .accordion-body {
+    background-color: white;
+}
+
+.about-card {
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ================================
+   REGISTER SECTION
+================================ */
 .bg-primary-green {
     background-color: #064232;
     color: white;
 }
-.bg-primary-green .accordion-button {
-    color: white;
-    background-color: #064232;
-}
-.bg-primary-green .accordion-button:not(.collapsed) {
-    background-color: #0a5a3f;
-    color: white;
-}
+
+.bg-primary-green .accordion-button,
 .bg-primary-green .accordion-body {
     background-color: #064232;
     color: white;
 }
+
+.bg-primary-green .accordion-button:not(.collapsed) {
+    background-color: #0a5a3f;
+}
+
 .bg-primary-dark {
     background-color: var(--primary-dark);
 }
 
-/* 3. EVENT Section Specific Styles */
+/* ================================
+   EVENT SECTION
+================================ */
 .event-card {
     transition: background-color 0.3s;
 }
+
 .event-card:hover {
     background-color: #f8f8f8;
 }
 
-/* 4. SPONSOR Section Specific Styles */
-.sponsor-logo {
-    filter: none;
-}
-/* 5. GALLERY Section Specific Styles */
+/* ================================
+   GALLERY
+================================ */
 .gallery-item {
     cursor: pointer;
 }
+
 .gallery-image {
-    height: 250px; /* Uniform height for gallery images */
+    height: 250px;
     object-fit: cover;
     transition: transform 0.3s;
 }
+
 .gallery-image:hover {
     transform: scale(1.05);
 }
-/* Gallery Carousel Styles (CRITICAL FIX FOR FADE EFFECT) */
+
+/* Fade Carousel */
 .gallery-carousel {
     overflow: hidden;
-    width: 100%;
     position: relative;
-}
-.carousel-container {
-    position: relative;
-    /* Set a fixed height so the container doesn't collapse when images are absolutely positioned */
-    height: 400px; 
-}
-.carousel-track {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.carousel-item {
-    position: absolute; /* 1. STACKS all slides on top of each other */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    opacity: 0; /* 2. CRITICAL: HIDDEN BY DEFAULT */
-    
-    transition: opacity 1s ease-in-out; /* Makes the fade smooth */
 }
 
-/* 3. The JS only adds this class to ONE slide at a time */
-.carousel-item.active {
-    opacity: 1; 
+.carousel-container {
+    height: 400px;
+    position: relative;
 }
+
+.carousel-item {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
 .carousel-item img {
     width: 100%;
-    height: 100% !important;
-    
-    /* ***** CRITICAL FIX: Change 'cover' to 'contain' ***** */
-    object-fit: contain; 
-    
-    /* ADD: Ensures the unused space is white, matching your theme */
-    background-color: white; 
+    height: 100%;
+    object-fit: contain;
+    background-color: white;
 }
 
-/* Media Queries for better responsiveness (Unchanged from previous response) */
-@media (max-width: 768px) {
-    .hero-section {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-        text-align: center;
-    }
-    .hero-section::before {
-        background-size: contain;
-        background-position: top center;
-    .countdown {
-        justify-content: center;
-    }
-    .countdown h2 {
-        font-size: 2rem;
-    }
-    .countdown p {
-        font-size: 0.8rem;
-    }
-    .cta-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .cta-buttons a {
-        margin: 5px 0 !important;
-        width: 80%;
-    }
-}
-/* Center alignment for person blocks */
+/* ================================
+   PEOPLE / COMMITTEE (FIXED)
+================================ */
 .person-card {
-    justify-content: center;   /* center horizontally */
-    text-align: center;        /* center text */
-}
-
-/* Rectangle photo style */
-.person-card img {
-    width: 90px;               /* rectangular width */
-    height: 110px;             /* rectangular height */
-    object-fit: cover;
-    border-radius: 6px;        /* rectangle with slight curve */
-    border: 1px solid #ddd;
-}
-
-/* Remove left spacing since centered */
-.person-card .ms-2,
-.person-card .ms-3 {
-    margin-left: 0 !important;
-}
-
-/* Stack image & text vertically */
-.person-card {
+    display: flex;
     flex-direction: column;
-}
-.big-divider {
-    border: none;
-    height: 2px;
-    background-color: #001109; /* Bootstrap success green */
-    margin: 40px 0;
-    opacity: 0.8;
+    align-items: center;
+    text-align: center;
 }
 
-/* Slight gap between image and text */
-.person-card img {
+/* 🔥 SINGLE SIZE FOR ALL PEOPLE */
+.person-card img,
+.rect-photo {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
     margin-bottom: 6px;
 }
 
-/* Section divider line */
-.section-line {
-    width: 60px;
-    height: 3px;
-    background-color: #198754; /* bootstrap success */
-    margin: 6px auto 16px auto; /* center the line */
-    border-radius: 2px;
-}
-
-/* Compact lists */
-.compact-list li {
-    margin-bottom: 4px;
-    text-align: center;
-}
-
-/* Center all headings */
-.organizer-card h6 {
-    text-align: center;
-}
-
-/* Organizing committee members grid center */
-.organizer-card .row.small {
-    text-align: center;
-}
-.rect-photo {
-    width: 130px;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
+/* ================================
+   DIVIDERS
+================================ */
 .big-divider {
     border-top: 2px solid #1b5e20;
     margin: 40px 0;
@@ -339,9 +275,39 @@ body {
 .section-line {
     width: 60px;
     height: 3px;
-    background: #1b5e20;
-    margin-bottom: 20px;
+    background-color: #1b5e20;
+    margin: 6px auto 20px;
+    border-radius: 2px;
 }
 
+/* ================================
+   LISTS
+================================ */
+.compact-list li {
+    margin-bottom: 4px;
+    text-align: center;
+}
 
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
 
+    .hero-section::before {
+        background-size: contain;
+        background-position: top center;
+    }
+
+    .countdown h2 {
+        font-size: 2rem;
+    }
+
+    .countdown p {
+        font-size: 0.8rem;
+    }
+}
