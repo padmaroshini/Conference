@@ -22,6 +22,12 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.topic-heading {
+    color: darkgreen;
+    font-weight: normal;
+    margin-bottom: 4px;
+}
+
 
 /* Top Bar and Navbar (Unchanged from previous response) */
 .top-bar {
@@ -328,3 +334,4 @@ body {
     background: #1b5e20;
     margin-bottom: 20px;
 }
+
