@@ -23,9 +23,12 @@ body {
     letter-spacing: 2px;
 }
 .topic-heading {
-    color: darkgreen;
+    color: #1b5e20 ;
     font-weight: normal;
     margin-bottom: 4px;
+}
+.tabbed {
+    margin-left: 40px;   
 }
 
 
@@ -334,4 +337,5 @@ body {
     background: #1b5e20;
     margin-bottom: 20px;
 }
+
 
